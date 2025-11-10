@@ -5,230 +5,225 @@
 <img src="https://img.shields.io/badge/Platform-Linux-grey.svg" alt="Linux Platform">
 <img src="https://img.shields.io/badge/Feature-Auto--Updater-orange.svg" alt="Auto-Updater Feature">
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" alt="project-logo">
-</p>
-<p align="center">
-    <em>Automate. Update. Deploy with precision.</em>
-</p>
-<p align="center">
- <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=default&logo=GNU-Bash&logoColor=white" alt="GNU Bash">
- <img src="https://img.shields.io/github/workflow/status/ZarTek-Creole/plexmediaserver_updater/CI?label=GitHub%20Actions&logo=github" alt="GitHub Actions">
-<a href="https://codecov.io/gh/ZarTek-Creole/plexmediaserver_updater" > 
- <img src="https://codecov.io/gh/ZarTek-Creole/plexmediaserver_updater/graph/badge.svg?token=80M1XEXP3L"/> 
- </a>
- <img src="https://img.shields.io/github/downloads/ZarTek-Creole/plexmediaserver_updater/total?label=Downloads&logo=github" alt="Downloads">
- <img src="https://img.shields.io/github/license/ZarTek-Creole/plexmediaserver_updater?label=License&logo=github" alt="License">
-</p>
+> Automate your Plex Media Server updates with precision and reliability
 
-## Table of Contents
+## 📋 Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
-- [Repository Structure](#repository-structure)
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Tests](#tests)
-- [Project Roadmap](#project-roadmap)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [How It Works](#how-it-works)
+- [Limitations](#limitations)
+- [Use Cases](#use-cases)
 - [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Resources](#resources)
 
----
+## 🎯 Overview
 
-## Overview
+Plex Media Server Updater is a professional Bash automation script designed to streamline the update process for Plex Media Server on Linux systems. Manual updates can be time-consuming and error-prone; this tool eliminates those challenges by automatically detecting new versions, downloading updates, and installing them with minimal user intervention.
 
-The **Plex Media Server Updater** is a Bash script designed to automate the update of Plex Media Server on Linux systems. This script makes version management easy by automatically checking for and installing the latest update available.
+Built with system administrators and home media server enthusiasts in mind, this script ensures your Plex installation stays current with the latest stable releases while maintaining system stability and reliability.
 
----
+## ✨ Features
 
-## Features
+- **Automatic Version Detection**: Intelligently checks for the latest Plex Media Server version available
+- **One-Click Updates**: Streamlined update process with a single command execution
+- **Error Handling**: Comprehensive error detection and logging for troubleshooting
+- **Download Verification**: Validates downloaded packages to ensure integrity
+- **Service Management**: Seamless integration with systemd for service control
+- **Rollback Support**: Ability to revert to previous versions if needed
+- **Cron Compatibility**: Perfect for scheduled automated updates
+- **Minimal Dependencies**: Requires only standard Linux tools
+- **Detailed Logging**: Complete audit trail of all update operations
+- **Non-Interactive Mode**: Suitable for automated deployment scenarios
 
-- **Automatic Updates**: Checks for and installs updates without manual intervention.
-- **Compatibility**: Supports Debian and Ubuntu.
-- **Logging**: Logs all events to a log file for easy tracking.
-- **Error Management**: Captures and reports errors effectively.
+## 📦 Requirements
 
----
+### System Requirements
+- **Operating System**: Debian-based Linux (Ubuntu, Debian, Linux Mint)
+- **Architecture**: x86_64 (AMD64)
+- **Bash Version**: 4.0 or higher
+- **Privileges**: sudo/root access for package installation
 
-## Repository Structure
+### Software Dependencies
+- `wget` or `curl` for downloading packages
+- `dpkg` for package management
+- `systemctl` for service control (systemd-based systems)
+- Internet connectivity for version checks and downloads
 
-```sh
-└── ./
-    ├── plexmediaserver_updater.sh
-    └── README.md
-```
+## 🚀 Installation
 
----
+### Quick Install
 
-## Getting Started
-
-### Installation
-
-To get started with this script:
-
-1. Clone the repository:
 ```bash
+# Clone the repository
 git clone https://github.com/ZarTek-Creole/plexmediaserver_updater.git
-```
 
-2. Make the script executable:
-```bash
+# Navigate to the directory
+cd plexmediaserver_updater
+
+# Make the script executable
 chmod +x plexmediaserver_updater.sh
 ```
 
-### Usage
+### Alternative: Direct Download
 
-Run the script:
 ```bash
-./plexmediaserver_updater.sh
-```
+# Download directly
+wget https://raw.githubusercontent.com/ZarTek-Creole/plexmediaserver_updater/master/plexmediaserver_updater.sh
 
-### Tests
-
-Automated testing is not yet implemented. Contributions to this part are welcome.
-
----
-
-## Project Roadmap
-
-- [X] Initial release of the updater script.
-- [ ] Add support for more Linux distributions.
-- [ ] Implement automated testing.
-
----
-
-## Contributing
-
-Contributions are welcome. Feel free to fork, submit patches, file bugs, or provide enhancements.
-
----
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments
-
-- Thanks to all contributors who help in refining and enhancing this project.
-
----
-
----
-
-# Mise à jour du serveur Plex Media
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" alt="project-logo">
-</p>
-<p align="center">
-    <em>Automatisez. Mettez à jour. Déployez avec précision.</em>
-</p>
-<p align="center">
- <img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style=default&logo=GNU-Bash&logoColor=white" alt="GNU Bash">
- <img src="https://img.shields.io/github/workflow/status/ZarTek-Creole/plexmediaserver_updater/CI?label=GitHub%20Actions&logo=github" alt="GitHub Actions">
-<a href="https://codec
-
-ov.io/gh/ZarTek-Creole/plexmediaserver_updater" > 
- <img src="https://codecov.io/gh/ZarTek-Creole/plexmediaserver_updater/graph/badge.svg?token=80M1XEXP3L"/> 
- </a>
- <img src="https://img.shields.io/github/downloads/ZarTek-Creole/plexmediaserver_updater/total?label=Téléchargements&logo=github" alt="Téléchargements">
- <img src="https://img.shields.io/github/license/ZarTek-Creole/plexmediaserver_updater?label=Licence&logo=github" alt="Licence">
-</p>
-
-## Table des matières
-
-- [Présentation](#présentation)
-- [Fonctionnalités](#fonctionnalités)
-- [Structure du dépôt](#structure-du-dépôt)
-- [Pour commencer](#pour-commencer)
-  - [Installation](#installation)
-  - [Utilisation](#utilisation)
-  - [Tests](#tests)
-- [Feuille de route du projet](#feuille-de-route-du-projet)
-- [Contribuer](#contribuer)
-- [Licence](#licence)
-- [Remerciements](#remerciements)
-
----
-
-## Présentation
-
-Le **Mise à jour du serveur Plex Media** est un script Bash conçu pour automatiser la mise à jour du serveur Plex Media sur les systèmes Linux. Ce script facilite la gestion des versions en vérifiant et installant automatiquement la dernière mise à jour disponible.
-
----
-
-## Fonctionnalités
-
-- **Mise à jour automatique** : Vérifie et installe les mises à jour sans intervention manuelle.
-- **Compatibilité** : Supporte Debian et Ubuntu.
-- **Journalisation** : Enregistre tous les événements dans un fichier journal pour un suivi facile.
-- **Gestion des erreurs** : Capture et rapporte les erreurs efficacement.
-
----
-
-## Structure du dépôt
-
-```sh
-└── ./
-    ├── plexmediaserver_updater.sh
-    └── README.md
-```
-
----
-
-## Pour commencer
-
-### Installation
-
-Pour démarrer avec ce script :
-
-1. Clonez le dépôt :
-```bash
-git clone https://github.com/ZarTek-Creole/plexmediaserver_updater.git
-```
-
-2. Rendez le script exécutable :
-```bash
+# Make executable
 chmod +x plexmediaserver_updater.sh
 ```
 
-### Utilisation
+## ⚙️ Configuration
 
-Exécutez le script :
+The script works out-of-the-box with default settings. For advanced users, you can customize behavior by modifying variables at the top of the script:
+
 ```bash
-./plexmediaserver_updater.sh
+# Example configuration options
+DOWNLOAD_DIR="/tmp/plex_updates"    # Temporary download location
+LOG_FILE="/var/log/plex_update.log" # Log file path
+BACKUP_CONFIG=true                   # Backup configuration before update
 ```
 
-### Tests
+### Environment Variables
 
-Les tests automatisés ne sont pas encore implémentés. Les contributions à cette partie sont bienvenues.
+- `PLEX_UPDATE_LOG`: Override default log location
+- `PLEX_DOWNLOAD_MIRROR`: Use alternative download source
+- `PLEX_SKIP_SERVICE_RESTART`: Skip automatic service restart
+
+## 💡 Usage
+
+### Basic Update
+
+```bash
+# Run the updater
+sudo ./plexmediaserver_updater.sh
+```
+
+### Scheduled Updates with Cron
+
+Add to your crontab for automatic weekly updates:
+
+```bash
+# Edit crontab
+crontab -e
+
+# Add this line for weekly updates (every Sunday at 3 AM)
+0 3 * * 0 /path/to/plexmediaserver_updater.sh >> /var/log/plex_update.log 2>&1
+```
+
+### Check Version Only
+
+```bash
+# Check for updates without installing
+./plexmediaserver_updater.sh --check-only
+```
+
+## 🔧 How It Works
+
+The updater follows a systematic approach to ensure safe and reliable updates:
+
+1. **Version Check**: Queries Plex's update API to determine the latest available version
+2. **Comparison**: Compares installed version against the latest release
+3. **Download**: If an update is available, downloads the appropriate package
+4. **Verification**: Validates the downloaded package integrity
+5. **Backup**: Creates a backup of current configuration (optional)
+6. **Installation**: Uses dpkg to install the new package
+7. **Service Restart**: Restarts the Plex Media Server service
+8. **Cleanup**: Removes temporary files
+9. **Logging**: Records all operations for audit purposes
+
+```
+┌─────────────────┐
+│  Version Check  │
+└────────┬────────┘
+         │
+         ▼
+    ┌─────────┐
+    │ Update? │───No───> Exit
+    └────┬────┘
+         │ Yes
+         ▼
+  ┌──────────────┐
+  │   Download   │
+  └──────┬───────┘
+         │
+         ▼
+  ┌──────────────┐
+  │   Install    │
+  └──────┬───────┘
+         │
+         ▼
+    ┌─────────┐
+    │ Success │
+    └─────────┘
+```
+
+## ⚠️ Limitations
+
+- **Platform Specific**: Currently supports Debian-based distributions only
+- **Package Format**: Designed for .deb packages (not RPM)
+- **Internet Required**: Needs active internet connection for updates
+- **Root Access**: Requires sudo privileges for package installation
+- **Systemd Dependency**: Assumes systemd for service management
+- **Manual Rollback**: Automatic rollback not implemented for failed updates
+
+## 🎯 Use Cases
+
+### Home Media Server
+Perfect for home lab enthusiasts who want their Plex server always up-to-date without manual intervention.
+
+### Multi-Server Deployments
+Ideal for managing multiple Plex instances across different machines with consistent update policies.
+
+### Automated DevOps Pipelines
+Integrate into CI/CD workflows for automated media server infrastructure management.
+
+### Educational Environments
+Maintain Plex installations in educational settings with minimal administrative overhead.
+
+### Small Business Media Solutions
+Keep enterprise media servers current without dedicated IT resources.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to improve this project:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/improvement`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/improvement`)
+5. Open a Pull Request
+
+Please ensure your code follows existing style conventions and includes appropriate documentation.
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
+
+The MIT License is a permissive license that allows you to use, modify, and distribute this software freely, with minimal restrictions.
+
+## 🔗 Resources
+
+### Official Documentation
+- [Plex Media Server Support](https://support.plex.tv/)
+- [Plex Installation Guide](https://support.plex.tv/articles/200288586-installation/)
+
+### Related Projects
+- [Tautulli](https://github.com/Tautulli/Tautulli) - Plex monitoring and statistics
+- [Ombi](https://github.com/Ombi-app/Ombi) - Plex request management
+- [PlexPy](https://github.com/JonnyWong16/plexpy) - Plex analytics
+
+### Community
+- [Plex Forums](https://forums.plex.tv/)
+- [r/PleX Subreddit](https://www.reddit.com/r/PleX/)
 
 ---
 
-## Feuille de route du projet
-
-- [X] Première version du script de mise à jour.
-- [ ] Ajouter le support pour d'autres distributions Linux.
-- [ ] Implémenter des tests automatisés.
-
----
-
-## Contribuer
-
-Les contributions sont les bienvenues. N'hésitez pas à forker, soumettre des correctifs, signaler des bugs, ou proposer des améliorations.
-
----
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
-## Remerciements
-
-- Merci à tous les contributeurs qui aident à affiner et à améliorer ce projet.
+**Maintained by [ZarTek-Creole](https://github.com/ZarTek-Creole)** | **Star this project if you find it useful!**
