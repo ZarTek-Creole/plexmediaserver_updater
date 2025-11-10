@@ -1,0 +1,128 @@
+project:
+  name: "Plex Media Server Updater"
+  full_name: "plexmediaserver_updater"
+  type: "Script"
+  category: "Server Automation"
+
+description:
+  short: "Automated Plex Media Server update script for Linux"
+  long: |
+    A comprehensive Bash automation script designed to keep Plex Media Server
+    up-to-date on Linux systems. This tool automatically checks for new versions,
+    downloads updates, and installs them seamlessly with minimal user intervention.
+    Perfect for system administrators and home media server enthusiasts who want
+    to ensure their Plex installation is always running the latest stable release.
+
+keywords:
+  primary:
+    - plex media server
+    - plex updater
+    - automatic plex update
+    - linux plex installer
+    - bash update script
+    - media server automation
+    - plex version management
+    - server maintenance tool
+    - plex auto-update
+    - linux media server
+  secondary:
+    - debian plex update
+    - ubuntu plex update
+    - systemd media server
+    - automated software updates
+    - plex media server linux
+    - bash automation script
+    - server update tool
+    - plex installation script
+    - media server maintenance
+    - linux server automation
+    - plex download manager
+    - server update scheduler
+    - plex package installer
+    - media server updater
+    - automatic version check
+  technical:
+    - bash shell scripting
+    - linux package management
+    - debian package installer
+    - systemd service management
+    - wget download automation
+    - dpkg package handler
+    - cron job automation
+    - server maintenance scripts
+    - version comparison logic
+    - error handling bash
+    - logging mechanisms
+    - dependency resolution
+    - checksum verification
+    - download resumption
+    - atomic updates
+
+topics:
+  - linux
+  - bash
+  - automation
+  - script
+  - plex
+  - media-server
+  - plex-server
+  - software-update
+  - server-management
+  - sysadmin
+  - scripts
+  - open-source
+  - plex-media-server
+  - updater
+  - auto-update
+
+language:
+  primary: "Bash"
+  version: "4.0+"
+
+requires:
+  - wget or curl
+  - dpkg (Debian/Ubuntu)
+  - sudo privileges
+  - internet connection
+
+features:
+  - Automatic version detection
+  - One-click update process
+  - Error handling and logging
+  - Debian/Ubuntu compatibility
+  - Systemd service integration
+  - Download verification
+  - Rollback capability
+  - Cron job scheduling support
+
+author:
+  name: "ZarTek-Creole"
+  github: "https://github.com/ZarTek-Creole"
+
+license:
+  type: "MIT"
+  url: "https://github.com/ZarTek-Creole/plexmediaserver_updater/blob/master/LICENSE"
+
+repository:
+  url: "https://github.com/ZarTek-Creole/plexmediaserver_updater"
+  type: "git"
+
+seo:
+  title: "Plex Media Server Auto Updater - Automated Linux Update Script"
+  meta_description: |
+    Bash script for seamless, automated Plex Media Server updates on Linux.
+    Ensures you always run the latest Plex version with one-click install,
+    error handling, and complete Debian/Ubuntu compatibility.
+  target_audience:
+    - System administrators
+    - Home media server operators
+    - Linux enthusiasts
+    - DevOps engineers
+    - Plex server maintainers
+  use_cases:
+    - Automated Plex server maintenance
+    - Scheduled update deployment
+    - Zero-downtime update processes
+    - Multi-server update management
+    - Home lab automation
+    - Enterprise media server operations
