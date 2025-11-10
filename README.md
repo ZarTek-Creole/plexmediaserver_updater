@@ -1,5 +1,10 @@
 # Plex Media Server Updater
 
+<img src="https://img.shields.io/badge/License-MIT-green.svg" alt="MIT License">
+<img src="https://img.shields.io/badge/Language-Bash-blue.svg" alt="Bash Language">
+<img src="https://img.shields.io/badge/Platform-Linux-grey.svg" alt="Linux Platform">
+<img src="https://img.shields.io/badge/Feature-Auto--Updater-orange.svg" alt="Auto-Updater Feature">
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" width="100" alt="project-logo">
 </p>
